@@ -16,6 +16,11 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #666; }
+
 body {
     background: rgb(10, 10, 10);
     color: white;
@@ -28,7 +33,7 @@ header {
 #logo {
     padding: 50px 20px;
     font-size: clamp(4px, 1vw, 10px);
-    overflow-x: auto;
+    overflow-x: hidden;
     will-change: opacity, transform;
     transform-origin: center bottom;
 }
@@ -43,6 +48,10 @@ nav {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #222;
     white-space: nowrap;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a, a {
@@ -128,16 +137,8 @@ ul li {
     background: #111;
     border: 1px solid #333;
     border-radius: 6px;
-}
-
-.code pre {
-    margin: 0;
-    color: #ccc;
-    font-family: monospace;
-    font-size: clamp(9px, 1vw, 14px);
-    line-height: 1.5;
-    white-space: pre-wrap;
-    overflow-wrap: anywhere;
+    font-size: clamp(10px, 1vw, 15px);
+    overflow: hidden;
 }
 
 code {
