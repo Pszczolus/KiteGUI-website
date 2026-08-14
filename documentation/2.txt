@@ -1,0 +1,10 @@
+#include <KiteGUI/KApplication>
+#include <KiteGUI/KWindow>
+
+int main() {
+    KApplication app;
+
+    KWindow window(app, "Title", {800, 600});
+
+    return app.run();
+}

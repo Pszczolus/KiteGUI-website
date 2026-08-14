@@ -1,0 +1,16 @@
+#include <KiteGUI/KApplication>
+#include <KiteGUI/KWindow>
+#include <KiteGUI/KButton>
+
+int main() {
+    KApplication app;
+    KWindow window(app, "Application", {800, 600});
+
+    KButton button(window, "Example text", {0, 0}, {300, 50});
+
+    button.onClick([]{
+        // Something that happens when the button is clicked.
+    });
+
+    return app.run();
+}

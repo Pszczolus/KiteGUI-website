@@ -1,0 +1,12 @@
+#include <KiteGUI/KApplication>
+#include <KiteGUI/KWindow>
+#include <KiteGUI/KText>
+
+int main() {
+    KApplication app;
+    KWindow window(app, "Application", {800, 600});
+
+    KText text(window, "Example text", {0, 0}, {300, 50});
+
+    return app.run();
+}

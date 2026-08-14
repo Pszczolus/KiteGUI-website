@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiteGUI | Documentation</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <pre id="logo" data-code="../KiteGUI.txt"></pre>
+    </header>
+
+    <nav>
+        <a href="/home" onclick="goToTop(event, this)">Home</a>
+        <a href="/documentation" class="active-button" onclick="goToTop(event, this)">Documentation</a>
+        <a href="https://github.com/Pszczolus/KiteGUI" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Documentation</h1>
+            <a href="#KApplication">KApplication</a><br>
+            <a href="#KWindow">KWindow</a><br>
+            <a href="#KText">KText</a><br>
+            <a href="#KButton">KButton</a>
+        </section>
+
+        <hr>
+
+        <section id="KApplication">
+            <h1>KApplication</h1>
+            <p>KApplication is the core class of KiteGUI. It manages the Windows message loop and handles events.</p>
+            <h2>Usage:</h2>
+            <pre class="code" data-code="1.txt"></pre>
+            <p>
+                <code>app.run()</code> starts the application's event loop and processes Windows messages.<br>
+                <b>You only need one KApplication per application.</b>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="KWindow">
+            <h1>KWindow</h1>
+            <p>KWindow represents a native Windows window in KiteGUI. It accepts three parameters: <code>KApplication& app</code>, <code>std::string title</code>, <code>std::pair&lt;int, int&gt; size</code>.</p>
+            <h2>Usage:</h2>
+            <pre class="code" data-code="2.txt"></pre>
+            <p>You can have multiple windows in your application.</p>
+        </section>
+
+        <hr>
+
+        <section id="KText">
+            <h1>KText</h1>
+            <p>KText is a widget used to display text inside a window. It accepts four parameters: <code>KWidget& parentWidget</code>, <code>std::string text</code>, <code>std::pair&lt;int, int&gt; location</code>, <code>std::pair&lt;int, int&gt; size</code>.</p>
+            <h2>Usage:</h2>
+            <pre class="code" data-code="3.txt"></pre>
+        </section>
+
+        <hr>
+
+        <section id="KButton">
+            <h1>KButton</h1>
+            <p>KButton is a clickable button. It accepts four parameters: <code>KWidget& parentWidget</code>, <code>std::string text</code>, <code>std::pair&lt;int, int&gt; location</code>, <code>std::pair&lt;int, int&gt; size</code>.</p>
+            <h2>Usage:</h2>
+            <pre class="code" data-code="4.txt"></pre>
+            <p>
+                <code>onClick()</code> sets a function that is called when the button is clicked<br>
+                Remember, always pass objects that you want to use in the lambda function.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1>More coming soon.</h1>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Wiktor Rybka</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+@view-transition {
+    navigation: auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: clamp(15px, 1vw, 20px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(10, 10, 10);
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+#logo {
+    padding: 50px 20px;
+    font-size: clamp(4px, 1vw, 10px);
+    overflow-x: auto;
+    will-change: opacity, transform;
+    transform-origin: center bottom;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    background: rgb(10, 10, 10, 0.5);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+}
+
+nav a, a {
+    color: gray;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: default;
+}
+
+nav a {
+    margin: 0 20px;
+}
+
+nav a:hover, a:hover {
+    color: palegreen;
+}
+
+a {
+    color: green;
+}
+
+.active-button {
+    pointer-events: none;
+    color: palegreen;
+}
+
+.disabled-button {
+    pointer-events: none;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    min-height: 95vh;
+    margin: auto;
+    padding: 50px 50px 120px;
+    background-image: radial-gradient(#0f0f0f 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+p {
+    color: darkgray;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: clamp(20px, 1vw, 30px);
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+hr {
+    margin: 50px 10px;
+    border: none;
+    border-top: 1px solid #1a1a1a;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: block;
+    margin: 3px 0;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #ccc;
+}
+
+.list-header, ul li strong {
+    color: springgreen;
+}
+
+.code {
+    margin: 10px 0;
+    padding: 15px;
+    overflow-x: auto;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+}
+
+.code pre {
+    margin: 0;
+    color: #ccc;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+code {
+    background: #222;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(10, 10, 10, 0.5);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #222;
+}
+
+footer p {
+    padding: 10px;
+    color: #666;
+}

@@ -1,0 +1,9 @@
+#include <KiteGUI/KApplication>
+
+int main() {
+    KApplication app;
+
+    // Application code
+
+    return app.run();
+}

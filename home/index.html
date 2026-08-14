@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiteGUI | Home</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <pre id="logo" data-code="../KiteGUI.txt"></pre>
+    </header>
+
+    <nav>
+        <a href="/home" class="active-button" onclick="goToTop(event, this)">Home</a>
+        <a href="/documentation" onclick="goToTop(event, this)">Documentation</a>
+        <a href="https://github.com/Pszczolus/KiteGUI" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+    <main>
+        <section>
+            <h1>What is KiteGUI?</h1>
+            <p>KiteGUI is a simple, object-oriented C++ GUI framework. It acts as a "wrapper" around the WinAPI, simplifying almost everything it has to offer. The core purpose of this library is to make the application creation process as simple as possible. For example, a window can be created by declaring just a single variable. See the Examples page to see just how easy it is.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1>Why use KiteGUI?</h1>
+            <ul>
+                <li>
+                    <p class="list-header">Simple</p>
+                    <p>No massive dependencies or complex build systems. Just link the library and start compiling right away.</p>
+                </li>
+                <li>
+                    <p class="list-header">Lightweight</p>
+                    <p>KiteGUI wraps the WinAPI library into classes, functions, and variables; so basically, you get the same speed as a native WinAPI application but with 10x less work.</p>
+                </li>
+                <li>
+                    <p class="list-header">Limited Only by Your Creativity</p>
+                    <p>You don't need to know the WinAPI or worry about its complexity and errors. KiteGUI handles the hard part, so you can focus on building whatever you imagine.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1>Requirements</h1>
+            <ul>
+                <li>
+                    <p class="list-header">OS</p>
+                    <p>Windows 10/11</p>
+                </li>
+                <li>
+                    <p class="list-header">Language</p>
+                    <p>Standard C++17 or newer</p>
+                </li>
+                <li>
+                    <p class="list-header">Compiler</p>
+                    <p>MSVC, MinGW, or Clang for Windows</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h1>Download</h1>
+            <p>The whole installation process is described on my <a href="https://github.com/Pszczolus/KiteGUI" target="_blank" rel="noopener">GitHub</a> page along with the source code.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; Wiktor Rybka</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
